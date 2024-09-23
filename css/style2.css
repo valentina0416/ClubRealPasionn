@@ -1,0 +1,317 @@
+
+.marcas{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+@keyframes slide{
+    from{
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+
+.logos{
+    overflow: hidden;
+    padding: 20px 0;
+    background: #ffffff;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after{
+    position: absolute;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+
+}
+ 
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left,  rgba(255, 255, 255, 0), #fff );
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right,  rgba(255, 255, 255, 0), #fff );
+}
+
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+
+.logos-slide{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img{
+    height: 80px;
+    margin: 0 30px;
+}
+
+/* end marcas /inicio */
+
+/*inicio servicecolor*/
+.colorr1{
+  background-color: #ff5d2b;
+}
+/*end servicecolor*/
+
+/*inicio Sobre nosotros*/
+
+.fruit_img-box  img{
+    width: 310px;
+    height: 230px;
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+  margin-right: 40px;
+  width: 310px; /* Ajusta el tamaño según tus necesidades */
+  padding: 10px; /* Espacio entre la imagen y el borde */
+  background-color: #ffffff; /* Color de fondo para el espacio interno */
+  border: 3px solid #12028a; /* Borde sólido de 5px de grosor y color gris oscuro */
+}
+
+.fruit_section {
+    background: #fffcfc;
+}
+.fruit_section h3{
+    color: #ff5d2b;
+}
+.fruit_section p{
+    color: #000000;
+}
+
+/*end Sobre nosotros*/
+
+/*New galeria*/
+.allgallery{
+    box-sizing: border-box;
+  
+   }
+  .bodygallery{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .galery{
+    color: #000000;
+    text-align: center;
+    font-weight: 960;
+  
+  }
+  
+   /*Estilos de galeria*/
+  .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  .gallery__item{
+    position: relative;
+  }
+  .gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  .gallery__title{
+    position: absolute;
+    bottom: 0 ;
+    color: white;
+    background:linear-gradient(rgba(99, 66, 184, 0.961), rgb(254, 254, 254) ) ;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .gallery__item:nth-child(4){
+    grid-column-start: span 2;
+  }
+  .gallery__item:nth-child(5){
+    grid-row-start: span 2;
+  }
+  .gallery__item:nth-child(9){
+    grid-column-start: span 2;
+  }
+  
+  @media (min-width:768px){
+    .gallery-container{
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .gallery__item:nth-child(3) {
+      grid-column-start: span 2;
+    }
+    .gallery__item:nth-child(4) {
+      grid-column-start: span 3;
+    }
+    .gallery__item:nth-child(5) {
+      grid-row-start: span 3;
+    }
+    .gallery__item:nth-child(9) {
+      grid-column-start: span 2;
+    }
+  }
+  @media (min-width:1024px){
+    .gallery-container{
+      grid-template-columns: repeat(5, 1fr);
+      width: 90%;
+      margin: auto;
+    }
+    .gallery__item:nth-child(1) {
+      grid-column-start: span 2;
+      grid-row-start: span 2;
+    }
+    .gallery__item:nth-child(4) {
+      grid-column-start: span 3;
+      grid-row-start: span 3;
+    }
+  
+  }
+   
+    /*New galeria*/
+
+    .container h5{
+      color: #e3ff12;
+    }
+
+    .container ul{
+      color: #ffffff;
+    }
+
+    
+    /* Start Cards2 */
+.carddtittle {
+  font-size: 55px;
+  text-align: center;
+  padding: 0;
+  margin: 1px;
+  color: #ff6106;
+  font-weight: 700;
+
+}
+
+.all2{
+  margin: 1%;
+  padding: 1%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 700;
+
+}
+
+.boody2{
+  display: flex;
+  flex-wrap: wrap ; /*para organizar cartas*/
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  
+}
+.cardd2 {
+  position: relative;
+  width: 250px;
+  height: 340px;
+  margin: 20px;
+  margin: 2%;
+  margin-bottom: 2%;
+}
+.cardd2 .face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.cardd2 .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 3px 1px 4px #f3efec;
+}
+
+.cardd2 .front img{
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+
+
+
+}
+
+.cardd2 .front h3{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+  text-align: center;
+}
+.cardd2 .back{
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(250, 29, 0);
+  padding: 15px;
+  color: #f3f2f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000; 
+}
+
+.cardd2 .back .link{
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+.cardd2 .back .link a{
+  color: #f3f3f3;
+}
+.cardd2 .back h3{
+  font-size: 35px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+.cardd2 .back p{
+  letter-spacing: 1px;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.cardd2:hover .front{
+  transform: perspective(600px) rotateY(180deg);
+}
+.cardd2:hover .back{
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/* End Cards2*/
+
+/*SErvices*/
+.custom_heading-text {
+  font-size: 20px;
+  color: #f3f2f3;
+}
+/*SErvices*/
+
+/*contacto*/
+
+/*fin Contacto*/

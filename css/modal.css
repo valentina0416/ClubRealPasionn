@@ -1,0 +1,208 @@
+.all1{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    /*border: solid thick yellow;*/
+
+}
+
+.modal-container{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.paragraph{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.modal-img{
+    width: 50%;
+    max-width: 200px;
+}
+.btns{
+    display: flex; /*para q se acomoden uno al lado del otro*/
+    gap: 15px;
+}
+.btns >a{
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: .3rem;
+    color: #fff;
+    font-weight: 400;
+}
+.btns .open-view{
+    color: #222;
+    background-color: #e6e6e6;
+    border: solid thin gray;
+}
+.open-guide{
+    background-color: #6c63ff;
+}
+.close{
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+/* Estilos generales del modal */
+.modal {
+    display: none; /* El modal está oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    margin-top: 6%;
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 13% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Estilos generales del modal */
+.modal {
+  display: none; /* El modal está oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  
+  width: 100%;
+  height: 100%;
+ 
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 2px solid #ff0808;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+
+  /* Animación de entrada */
+  transform: translateY(-50px); /* Comienza un poco más arriba */
+  opacity: 0; /* Transparente al principio */
+  animation: slideDown 0.5s ease-out forwards; /* Efecto de movimiento */
+}
+
+.close {
+  color: #f9500d;
+  float: right;
+  font-size: 55px;
+  margin-top: 50px;
+  font-weight: bold;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #00039e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Definimos la animación de deslizamiento hacia abajo */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px); /* Inicia un poco más arriba */
+    opacity: 0; /* Transparente */
+  }
+  100% {
+    transform: translateY(0); /* Llega a su posición final */
+    opacity: 1; /* Completamente visible */
+  }
+}
+body.modal-open {
+    overflow: hidden;
+  }
+
+.modal2-img{
+    display: block;
+    margin: 0 auto;
+    max-width: 35%;
+    height: auto;
+    
+}
+
+/*crud*/
+
+.titulo1{
+  color: #ceeb29;
+  font-weight: 900;
+  background-color: rgb(32, 22, 22);
+  height: 70px;
+  padding: 18px;
+  
+}
+.galeria{
+  color: #ff4d20;
+  font-weight: 900;
+  background-color: rgb(32, 22, 22);
+  height: 70px;
+  padding: 18px;
+  opacity: 10px;
+  text-align: center;
+
+}
+label {
+  color: #000000;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+
+/* end crud*/
+
